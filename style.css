@@ -1,6 +1,8 @@
 body {
     width: 100%;
     background-color: #dadff7;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -94,5 +96,3 @@ input[type="number"] {
     width: 100%;
     max-width: 700px;
 }
-
-

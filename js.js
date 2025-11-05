@@ -6,7 +6,8 @@ function Calcular() {
     var cantidad = document.getElementById ("Cantidad").value;
 
     var tamaño = formulario.tam.value;
-    alert(tamaño);
+
+    var pan = formulario.pan.value;
 
     var total = 0;
 
@@ -18,6 +19,85 @@ function Calcular() {
     }
     else if (tamaño == "grande") {
         total = 200;
+    } else {
+        alert("Seleccione un tamaño de pizza");
+        return;
+    }
+
+    if (pan == "Blanco")
+    {
+        total = total + 0;
+    }
+    else if (pan == "Integral")
+    {
+        total = total + 20;
+    }
+    else if(pan == "Papa")
+    {
+        total = total + 30;
+    }
+    else if(pan == "Parmesano")
+    {
+        total = total + 40;
+    }
+    else {
+        alert("Por favor selecciona un tipo de pan");
+        return;
+    }
+
+    if (formulario.Tomate.checked) 
+    {
+        total += 10;
+    }
+
+    if (formulario.Cebolla.checked) 
+    {
+        total += 10;
+    }
+
+    if (formulario.Aguacate.checked)  
+    {
+        total += 10;
+    }
+
+    if (formulario.Jamon.checked) 
+    {
+        total += 10;
+    }
+
+    if (formulario.Tocino.checked) 
+    {
+        total += 10;
+    }
+
+    if (formulario.QuesoAmarillo.checked) 
+    {
+        total += 10;
+    }
+
+    if (formulario.QuesoBlanco.checked) 
+    {
+        total += 10;
+    }
+
+    if (formulario.Champiñones.checked) 
+    {
+        total += 10;
+    }
+
+    if (formulario.Trompo.checked) 
+    {
+        total += 10;
+    }
+
+    if (formulario.Piña.checked) 
+    {
+        total += 10;
+    }
+
+    if (formulario.Combo.value == "Si")
+    {
+        total += 50;
     }
 
     formulario.Total.value = total * cantidad;

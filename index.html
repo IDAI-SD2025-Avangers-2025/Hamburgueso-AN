@@ -7,139 +7,155 @@
     <title>Hamburgueso</title>
 </head>
 <body>
-
-    <form action="" id="calcularPrecio">
-
-        <div>
-            <label for="Cantidad">
-                <input type="number" name="Cantidad" id="Cantidad" value="1" min="1">
-                Cantidad
-            </label>
+</body>
+    <div class="ims">
+        <div class="izquierda">
+            <img src="AENP/Ham1.png" alt="Hamburguesa 1">
+            <img src="AENP/Ham2.png" alt="Hamburguesa 2">
         </div>
 
-        <div>
-            <h2>Tamaño</h2>
-            <label for="Chico">
-            <input type="radio" name="tam" id="chico" value="chico">
-            Chico
-            </label>
-            <br>
+    <div class="center">
+            <form action="" id="calcularPrecio">
 
-            <label for="Mediano">
-            <input type="radio" name="tam" id="mediano" value="mediano">
-            Mediano
-            </label>
-            <br>
+                <h1>Hamburguesas KC</h1>
 
-            <label for="Grande">
-            <input type="radio" name="tam" id="grande" value="grande">
-            Grande
-            </label>
-            <br>
+                <div class="canHam">
+                    <h2>Cantidad</h2>
+                    <label for="Cantidad">
+                        <input type="number" name="Cantidad" id="Cantidad" value="1" min="1">
+                    </label>
+                </div>
+
+                <div class="tamHam">
+                    <h2>Tamaño</h2>
+                    <label for="Chico">
+                    <input type="radio" name="tam" id="chico" value="chico">
+                    Chico $100
+                    </label>
+                    <br>
+
+                    <label for="Mediano">
+                    <input type="radio" name="tam" id="mediano" value="mediano">
+                    Mediano $150
+                    </label>
+                    <br>
+
+                    <label for="Grande">
+                    <input type="radio" name="tam" id="grande" value="grande">
+                    Grande $200
+                    </label>
+                    <br>
+                </div>
+
+                <div class="tipoPan">
+                    <h2>Tipo de Pan</h2>
+                    <label for="Blanco">
+                    <input type="radio" name="pan" id="Blanco" value="Blanco">
+                    Blanco
+                    </label>
+                    <br>
+
+                    <label for="Integral">
+                    <input type="radio" name="pan" id="Integral" value="Integral">
+                    Integral
+                    </label>
+                    <br>
+
+                    <label for="Papa">
+                    <input type="radio" name="pan" id="Papa" value="Papa">
+                    Papa
+                    </label>
+                    <br>
+
+                    <label for="Parmesano">
+                    <input type="radio" name="pan" id="Parmesano" value="Parmesano">
+                    Parmesano
+                    </label>
+                    <br>
+                </div>
+
+                <div class="ingHam">
+                    <h2>Ingredientes</h2>
+                    <label for="Tomate">
+                    <input type="checkbox" name="Tomate" id="Tomate">
+                    Tomate
+                    <br>
+                    
+                    <label for="Cebolla">
+                    <input type="checkbox" name="Cebolla" id="Cebolla">
+                    Cebolla
+                    <br>
+
+                    <label for="Aguacate">
+                    <input type="checkbox" name="Aguacate" id="Aguacate">
+                    Aguacate
+                    <br>
+
+                    <label for="Jamon">
+                    <input type="checkbox" name="Jamon" id="Jamon">
+                    Jamon
+                    <br>
+
+                    <label for="Tocino">
+                    <input type="checkbox" name="Tocino" id="Tocino">
+                    Tocino
+                    <br>
+
+                    <label for="Queso Amarillo">
+                    <input type="checkbox" name="Queso Amarillo" id="Queso Amarillo">
+                    Queso Amarillo
+                    <br>
+
+                    <label for="Queso Blanco">
+                    <input type="checkbox" name="Queso Blanco" id="Queso Blanco">
+                    Queso Blanco
+                    <br>
+
+                    <label for="Champiñones">
+                    <input type="checkbox" name="Champiñones" id="Champiñones">
+                    Champiñones
+                    <br>
+
+                    <label for="Trompo">
+                    <input type="checkbox" name="Trompo" id="Trompo">
+                    Trompo
+                    <br>
+
+                    <label for="Piña">
+                    <input type="checkbox" name="Piña" id="Piña">
+                    Piña
+                    <br>
+                </div>
+
+                <div class="comboHam">
+                    <h2>Combo</h2>
+                    <label for="Combo">
+                        ¿Desea combo? (Refresco y Papas + $50)
+                        <select name="Combo" id="Combo">
+                            <option value="Si">Si</option>
+                            <option value="No">No</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="botonHam">
+                    <br>
+                    <button type="submit" onclick="Calcular()">Precio</button>
+                    <br>
+                    <br>
+                    <label for="Total">
+                    <input type="number" name="Total" id="Total" readonly>
+                    </label>
+                </div>
+
+            </form>
+    </div>
+
+        <div class="derecha">
+            <img src="AENP/Ham3.jfif" alt="Hamburguesa 3">
+            <img src="AENP/Ham4.jfif" alt="Hamburguesa 4">
         </div>
-
-        <div>
-            <h2>Tipo de Pan</h2>
-            <label for="Blanco">
-            <input type="radio" name="pan" id="Blanco">
-            Blanco
-            </label>
-            <br>
-
-            <label for="Integral">
-            <input type="radio" name="pan" id="Integral">
-            Integral
-            </label>
-            <br>
-
-            <label for="Papa">
-            <input type="radio" name="pan" id="Papa">
-            Papa
-            </label>
-            <br>
-
-            <label for="Parmesano">
-            <input type="radio" name="pan" id="Parmesano">
-            Parmesano
-            </label>
-            <br>
-        </div>
-
-        <div>
-            <h2>Ingredientes</h2>
-            <label for="Tomate">
-            <input type="checkbox" name="Tomate" id="Tomate">
-            Tomate
-            <br>
-            
-            <label for="Cebolla">
-            <input type="checkbox" name="Cebolla" id="Cebolla">
-            Cebolla
-            <br>
-
-            <label for="Aguacate">
-            <input type="checkbox" name="Aguacate" id="Aguacate">
-            Aguacate
-            <br>
-
-            <label for="Jamon">
-            <input type="checkbox" name="Jamon" id="Jamon">
-            Jamon
-            <br>
-
-            <label for="Tocino">
-            <input type="checkbox" name="Tocino" id="Tocino">
-            Tocino
-            <br>
-
-            <label for="Queso Amarillo">
-            <input type="checkbox" name="Queso Amarillo" id="Queso Amarillo">
-            Queso Amarillo
-            <br>
-
-            <label for="Queso Blanco">
-            <input type="checkbox" name="Queso Blanco" id="Queso Blanco">
-            Queso Blanco
-            <br>
-
-            <label for="Champiñones">
-            <input type="checkbox" name="Champiñones" id="Champiñones">
-            Champiñones
-            <br>
-
-            <label for="Trompo">
-            <input type="checkbox" name="Trompo" id="Trompo">
-            Trompo
-            <br>
-
-            <label for="Piña">
-            <input type="checkbox" name="Piña" id="Piña">
-            Piña
-            <br>
-        </div>
-
-        <div>
-            <br>
-            <label for="Combo">
-                ¿Desea combo? (Refresco y Papas)
-                <select name="Combo" id="Combo">
-                    <option value="Si">Si</option>
-                    <option value="No">No</option>
-                </select>
-            </label>
-        </div>
-
-        <div>
-            <br>
-            <button type="submit" onclick="Calcular()">Precio</button>
-            <br>
-            <br>
-            <label for="Total">Total a Pagar
-            <input type="number" name="Total" id="Total" readonly>
-            </label>
-        </div>
-
-    </form>
+    </div>
 
     <script src="js.js"></script>
 </body>

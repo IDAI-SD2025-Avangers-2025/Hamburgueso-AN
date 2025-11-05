@@ -1,0 +1,98 @@
+body {
+    width: 100%;
+    background-color: #dadff7;
+}
+
+h1 {
+    text-align: center;
+    color: #333366;
+    font-family: Arial, sans-serif;
+}
+
+form {
+    justify-items: center;
+    align-items: center;
+}
+
+.canHam,
+.tamHam,
+.tipoPan,
+.ingHam,
+.comboHam,
+.botonHam {
+    margin: 15px;
+    padding: 10px;
+    border: 3px solid #333366;
+    border-radius: 8px;
+    background-color: #f0f0ff;
+    width: 400px;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+}
+
+button {
+    background-color: #333366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #555588;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 2px solid #333366;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.ims {
+    display: grid;
+    grid-template-columns: minmax(160px,300px) 1fr minmax(160px,300px);
+    gap: 28px;
+    align-items: center;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.izquierda,
+.derecha {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+.izquierda img,
+.derecha img {
+    
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 3px solid #333366;
+    background: #fff;
+    box-shadow: 0 8px 20px rgba(51,51,102,0.14);
+    display: block;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.center form {
+    width: 100%;
+    max-width: 700px;
+}
+
+

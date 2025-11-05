@@ -1,7 +1,6 @@
 var formulario = document.getElementById("calcularPrecio");
 
 function Calcular() {
-    event.preventDefault();
 
     var cantidad = document.getElementById ("Cantidad").value;
 
@@ -19,10 +18,8 @@ function Calcular() {
     }
     else if (tamaño == "grande") {
         total = 200;
-    } else {
-        alert("Seleccione un tamaño de pizza");
-        return;
-    }
+    } 
+    
 
     if (pan == "Blanco")
     {
@@ -40,10 +37,7 @@ function Calcular() {
     {
         total = total + 40;
     }
-    else {
-        alert("Por favor selecciona un tipo de pan");
-        return;
-    }
+    
 
     if (formulario.Tomate.checked) 
     {

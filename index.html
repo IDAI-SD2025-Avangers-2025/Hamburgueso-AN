@@ -22,26 +22,26 @@
                 <div class="canHam">
                     <h2>Cantidad</h2>
                     <label for="Cantidad">
-                        <input type="number" name="Cantidad" id="Cantidad" value="1" min="1">
+                        <input type="number" name="Cantidad" id="Cantidad" value="1" min="1" onchange="Calcular()">
                     </label>
                 </div>
 
                 <div class="tamHam">
                     <h2>Tamaño</h2>
                     <label for="Chico">
-                    <input type="radio" name="tam" id="chico" value="chico">
+                    <input type="radio" name="tam" id="chico" value="chico" onclick="Calcular()">
                     Chico (100 MXN)
                     </label>
                     <br>
 
                     <label for="Mediano">
-                    <input type="radio" name="tam" id="mediano" value="mediano">
+                    <input type="radio" name="tam" id="mediano" value="mediano" onclick="Calcular()">
                     Mediano (150 MXN)
                     </label>
                     <br>
 
                     <label for="Grande">
-                    <input type="radio" name="tam" id="grande" value="grande">
+                    <input type="radio" name="tam" id="grande" value="grande" onclick="Calcular()">
                     Grande (200 MXN)
                     </label>
                     <br>
@@ -50,25 +50,25 @@
                 <div class="tipoPan">
                     <h2>Tipo de Pan</h2>
                     <label for="Blanco">
-                    <input type="radio" name="pan" id="Blanco" value="Blanco">
+                    <input type="radio" name="pan" id="Blanco" value="Blanco" onclick="Calcular()">
                     Blanco (0 MXN)
                     </label>
                     <br>
 
                     <label for="Integral">
-                    <input type="radio" name="pan" id="Integral" value="Integral">
+                    <input type="radio" name="pan" id="Integral" value="Integral" onclick="Calcular()">
                     Integral (20 MXN)
                     </label>
                     <br>
 
                     <label for="Papa">
-                    <input type="radio" name="pan" id="Papa" value="Papa">
+                    <input type="radio" name="pan" id="Papa" value="Papa" onclick="Calcular()">
                     Papa (30 MXN)
                     </label>
                     <br>
 
                     <label for="Parmesano">
-                    <input type="radio" name="pan" id="Parmesano" value="Parmesano">
+                    <input type="radio" name="pan" id="Parmesano" value="Parmesano" onclick="Calcular()">
                     Parmesano (40 MXN)
                     </label>
                     <br>
@@ -77,52 +77,52 @@
                 <div class="ingHam">
                     <h2>Ingredientes (10 MXN por extras)</h2>
                     <label for="Tomate">
-                    <input type="checkbox" name="Tomate" id="Tomate">
+                    <input type="checkbox" name="Tomate" id="Tomate" onclick="Calcular()">
                     Tomate
                     <br>
                     
                     <label for="Cebolla">
-                    <input type="checkbox" name="Cebolla" id="Cebolla">
+                    <input type="checkbox" name="Cebolla" id="Cebolla" onclick="Calcular()">
                     Cebolla
                     <br>
 
                     <label for="Aguacate">
-                    <input type="checkbox" name="Aguacate" id="Aguacate">
+                    <input type="checkbox" name="Aguacate" id="Aguacate" onclick="Calcular()">
                     Aguacate
                     <br>
 
                     <label for="Jamon">
-                    <input type="checkbox" name="Jamon" id="Jamon">
+                    <input type="checkbox" name="Jamon" id="Jamon" onclick="Calcular()">
                     Jamon
                     <br>
 
                     <label for="Tocino">
-                    <input type="checkbox" name="Tocino" id="Tocino">
+                    <input type="checkbox" name="Tocino" id="Tocino" onclick="Calcular()">
                     Tocino
                     <br>
 
                     <label for="QuesoAmarillo">
-                    <input type="checkbox" name="QuesoAmarillo" id="QuesoAmarillo">
+                    <input type="checkbox" name="QuesoAmarillo" id="QuesoAmarillo" onclick="Calcular()">
                     Queso Amarillo
                     <br>
 
                     <label for="QuesoBlanco">
-                    <input type="checkbox" name="QuesoBlanco" id="QuesoBlanco">
+                    <input type="checkbox" name="QuesoBlanco" id="QuesoBlanco" onclick="Calcular()">
                     Queso Blanco
                     <br>
 
                     <label for="Champiñones">
-                    <input type="checkbox" name="Champiñones" id="Champiñones">
+                    <input type="checkbox" name="Champiñones" id="Champiñones" onclick="Calcular()">
                     Champiñones
                     <br>
 
                     <label for="Trompo">
-                    <input type="checkbox" name="Trompo" id="Trompo">
+                    <input type="checkbox" name="Trompo" id="Trompo" onclick="Calcular()">
                     Trompo
                     <br>
 
                     <label for="Piña">
-                    <input type="checkbox" name="Piña" id="Piña">
+                    <input type="checkbox" name="Piña" id="Piña" onclick="Calcular()">
                     Piña
                     <br>
                 </div>
@@ -131,9 +131,9 @@
                     <h2>Combo</h2>
                     <label for="Combo">
                         ¿Desea combo con Papas y Refresco (50 MXN)?
-                        <select name="Combo" id="Combo">
-                            <option value="Si">Si</option>
+                        <select name="Combo" id="Combo" onchange="Calcular()">
                             <option value="No">No</option>
+                            <option value="Si">Si</option>
                         </select>
                     </label>
                 </div>

@@ -56,6 +56,22 @@ input[type="number"] {
     box-sizing: border-box;
 }
 
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 2px solid #333366;
+    border-radius: 6px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
 .ims {
     display: grid;
     grid-template-columns: minmax(160px,300px) 1fr minmax(160px,300px);
